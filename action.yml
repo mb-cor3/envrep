@@ -1,0 +1,18 @@
+name: Replace Values in YAML Files
+description: |
+  This action replaces values in YAML files using environment variables.
+
+inputs:
+  dir:
+    description: 'The directory to scan for YAML files.'
+    required: false
+    default: 'k8s'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: /envrep
+
+branding:
+  icon: 'refresh-cw'
+  color: 'green'
