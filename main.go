@@ -33,7 +33,7 @@ func processFile(path string, pattern *regexp.Regexp, info os.FileInfo, ext stri
 }
 
 func main() {
-	path := os.Getenv("PATH")
+	path := os.Getenv("TARGET")
 	if path == "" {
 		path = "k8s"
 	}
