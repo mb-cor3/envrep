@@ -1,10 +1,10 @@
-name: Replace Values in YAML Files
+name: Replace Values in YAML and JSON Files
 description: |
-  This action replaces values in YAML files using environment variables.
+  This action replaces values in YAML and JSON files using environment variables.
 
 inputs:
-  dir:
-    description: 'The directory to scan for YAML files.'
+  path:
+    description: 'The directory or file to scan for YAML and JSON files.'
     required: false
     default: 'k8s'
 
